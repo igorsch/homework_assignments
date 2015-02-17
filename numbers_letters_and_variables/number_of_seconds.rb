@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 seconds_in_a_minute = 60
 minutes_in_an_hour = 60
 hours_in_a_day = 24
