@@ -8,4 +8,4 @@ puts 'this is a string to practice with'.capitalize.gsub('string', "'string'")
 length = 'this is a string to practice with'.length
 puts 'this is a string to practice with'.insert(0, "The string '").insert(45, "' has #{length} characters")
 puts 'this is a string to practice with'.reverse
-puts (('this is a string to practice with'.byteslice(20..28)) * 3).chop
+puts (('this is a string to practice with'.byteslice(20..28)) * 3)
