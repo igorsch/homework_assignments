@@ -25,7 +25,7 @@ adjective_three = ask_question('Give me another adjective:')
 number = ask_question('Give me a number:')
 noun_seven = ask_question('Give me another plural noun:')
 
-puts "
+puts <<END_OF_MADLIB
 A vacation is when you take a trip to some #{adjective_one} place
 with your #{adjective_two} family. Usually you go to some place
 that is near a/an #{noun_one} or up on a/an #{noun_two}.
@@ -42,4 +42,4 @@ need vacations more than kids because parents are always very
 #{adjective_three} and because they have to work #{number}
 hours every day all year making enough #{noun_seven} to pay
 for the vacation.
-"
+END_OF_MADLIB
