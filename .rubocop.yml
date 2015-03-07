@@ -1,0 +1,11 @@
+AllCops:
+  Exclude:
+    - 'Guardfile'
+    - 'homework_tester/features/step_definitions/homework_tester_steps.rb'
+    - 'homework_tester/features/support/env.rb'
+
+StringLiterals:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 90
