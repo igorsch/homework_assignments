@@ -3,4 +3,4 @@ AllCops:
     - 'Guardfile'
 
 Documentation:
-  Enabled: fasle
+  Enabled: false
