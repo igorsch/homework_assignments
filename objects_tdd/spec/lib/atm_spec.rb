@@ -27,9 +27,19 @@ describe Atm do
     end
 
     describe '#withdrawal(amount)' do
-      it "should subtract amount from balance.
-        And return 'Your new balance is: $2100.00'" do
-        expect(atm.withdrawal(100)).to eq('Your new balance is: $2100.00')
+      atm2 = Atm.new
+      context 'for withdrawal less than balance should return balance.' do
+        it "should subtract amount from balance.
+        And return 'Your new balance is: $1900.00'" do
+          expect(atm2.withdrawal(100)).to eq('Your new balance is: $1900.00')
+        end
+      end
+
+      context 'for withdrawal greater than balance should raise an error.' do
+        it "should subtract amount from balance.
+        And return 'Non sufficient funds'" do
+          expect(atm2.withdrawal(3100)).to eq('Non sufficient funds')
+        end
       end
     end
 

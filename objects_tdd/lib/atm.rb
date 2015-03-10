@@ -16,8 +16,12 @@ class Atm
   end
 
   def withdrawal(amount)
-    @balance -= amount
-    "Your new balance is: $#{format('%.2f', @balance)}"
+    if amount > @balance.to_i
+      'Non sufficient funds'
+    else
+      @balance -= amount
+      "Your new balance is: $#{format('%.2f', @balance)}"
+    end
   end
 
   def return_card
@@ -30,4 +34,6 @@ if __FILE__ == $PROGRAM_NAME
   puts atm.balance
   puts atm.check_balance
   puts atm.check_balance.class
+  puts atm.withdrawal(100)
+  puts atm.withdrawal(3100)
 end
